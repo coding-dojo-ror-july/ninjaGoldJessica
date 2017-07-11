@@ -1,0 +1,38 @@
+<h2>Your Gold:</h2>
+<%= @gold %>
+<div>
+    <h1>Farm</h1>
+    <h2>Earns (10-20 golds)</h2>
+    <form action="/farm" method="POST">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <button type="submit">Find Gold!</button>
+    </form>
+</div>
+<div>
+    <h1>Cave</h1>
+    <h2>Earns (5-10 golds)</h2>
+    <form action="/cave" method="POST">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <button type="submit">Find Gold!</button>
+    </form>
+</div>
+<div>
+    <h1>House</h1>
+    <h2>Earns (2-5 golds)</h2>
+    <form action="/house" method="POST">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <button type="submit">Find Gold!</button>
+    </form>
+</div>
+<div>
+    <h1>Casino</h1>
+    <h2>Earns/takes (0-50 golds)</h2>
+    <form action="/casino" method="POST">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <button type="submit">Find Gold!</button>
+    </form>
+</div>
+<div>
+    <h1>Session activities</h1>
+    <h3><%= @activities %></h3>
+</div>
